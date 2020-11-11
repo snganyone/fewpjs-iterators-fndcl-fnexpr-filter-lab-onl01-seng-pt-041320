@@ -5,6 +5,9 @@ function findMatching(arr, str) {
     });
 }
 
-function fuzzyName(arr, str){
-    return arr.filter();
+function fuzzyMatch(arr, str) {
+    // return arr.filter(function(word){
+    //     return word[0].toLowerCase().indexOf(str) === 0;
+    // });
+    return arr.filter((word) => word.startsWith(str));
 }
