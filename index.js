@@ -6,8 +6,9 @@ function findMatching(arr, str) {
 }
 
 function fuzzyMatch(arr, str) {
-    // return arr.filter(function(word){
-    //     return word[0].toLowerCase().indexOf(str) === 0;
-    // });
     return arr.filter((word) => word.startsWith(str));
+}
+
+function matchName(arr, str){
+    return arr.filter((word) => word.name = str);
 }
